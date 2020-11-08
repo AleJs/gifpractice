@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./GifGriditems.css";
 import PropTypes from "prop-types";
 function AddCategoris({ setCategories }) {
-  const [inputValue, setInputValue] = useState("hola mundo");
+  const [inputValue, setInputValue] = useState("search gif");
   const newInput = (e) => {
     setInputValue(e.target.value);
   };
@@ -10,13 +10,13 @@ function AddCategoris({ setCategories }) {
     e.preventDefault();
     if (inputValue.trim().length > 2) {
       setCategories((cats) => [inputValue, ...cats]);
-      setInputValue("");
+      setInputValue(" ");
     }
   };
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={inputValue} onChange={newInput} />
+        <input type="text" placeholder="" onChange={newInput} />
       </form>
     </>
   );

@@ -5,8 +5,8 @@ const GifGriditems = ({ img, title, id }) => {
     <div className="container">
       <ol>
         <li className="card animate__fadeIn-5s 5s ">
-          <h1 className="title">{title}</h1>
           <img className="img" src={img} alt="" />
+          <h1 className="title">{title}</h1>
         </li>
       </ol>
     </div>

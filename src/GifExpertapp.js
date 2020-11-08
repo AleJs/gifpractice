@@ -4,14 +4,14 @@ import GifGrid from "./componens/GifGrid";
 import "./componens/GifGriditems.css";
 
 function GifExpertapp() {
-  const [categories, setCategories] = useState([""]);
+  const [categories, setCategories] = useState(["universe"]);
   //   const handleAdd = () => {
   //     setCategories(["heidi", ...categories]);
   //   };
 
   return (
     <>
-      <h2 className="title">GifExpertapp</h2>
+      <h2 className="title">GIF API</h2>
       <AddCategoris setCategories={setCategories} />
       <hr />
       {/* <button onClick={handleAdd}>Agregar</button> */}
