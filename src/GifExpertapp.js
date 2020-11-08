@@ -11,8 +11,10 @@ function GifExpertapp() {
 
   return (
     <>
-      <h2 className="title">GIF API</h2>
-      <AddCategoris setCategories={setCategories} />
+      <div className="title-container">
+        <h2 className="title">GIF API</h2>
+        <AddCategoris setCategories={setCategories} />
+      </div>
       <hr />
       {/* <button onClick={handleAdd}>Agregar</button> */}
       <ol>
